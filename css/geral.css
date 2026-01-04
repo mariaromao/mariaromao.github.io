@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitulo{
+  font-size: 8rem;
+  line-height: 1; /*deixou mais juntinho*/
+  text-transform: uppercase;
+  word-break: break-all; /*ativa o quebrar palavra*/
+  max-width: 4ich; /*4ich, 4 caracter que quebra, nem sempre significar isso*/
+}
+
+@media (max-width: 800px){
+  .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+li{
+  list-style: none;
+}

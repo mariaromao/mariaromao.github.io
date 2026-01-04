@@ -1,0 +1,142 @@
+.Experiência{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.Experiência .subtitulo{ /*subtitulo que tiver na seção experiencia*/
+    color: #e0e0e0;
+}
+
+.Experiência-texto{
+    font-size: 1.2rem;
+    line-height: 1.33;
+    max-width: 40ich;
+    margin-bottom: 60px; /*foi um pouco pra cima do ano 2045*/
+    color: #525252;
+}
+
+.Experiência-texto strong{
+    color: #141414;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px; /*separa as caixas*/
+    border-radius: 4px;
+    position: relative;
+}
+
+.empresa::before{
+    content:"";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.empresa-ano{
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    font-size: 0.875rem;
+    text-align: right;
+    width: 80px;
+}
+
+.empresa-titulo{
+    position: relative;
+    align-content: center;
+    top: -15px;
+
+}
+.empresa-titulo2{ /*do span*/
+    font-size: 1.125rem;
+    position: relative;
+    left: 40px;
+    line-height: 1.1;
+    font-weight: bold; /*deixou negrito*/
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.empresa-texto{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+    position: relative;
+    top: -10px;
+}
+
+.empresa-habilidade{
+    display: flex; /*jogou os iten para um do lado do outro*/
+    gap: 20px; /*espaçamento entre os itens*/
+    flex-wrap: wrap; /*sla deixou mais bonitinho*/ 
+    align-content: start;   
+    list-style: none;
+    position: relative;
+    top: -15px;
+}
+
+.empresa-habilidade li{ /*colocar o li fez com que criasse um padding para cada elementos*/
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px){
+    .subtitulo{
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial;
+    }
+    .Experiência{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    }
+    .Experiência .subtitulo{
+        color: black;
+    }
+    .Experiência-texto{
+        font-size: 1.25rem;
+    }
+    .empresa-ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    }
+    .empresa-titulo{
+        position: initial;
+        position: relative;
+        gap: 30px;
+    }
+    .empresa-ano::before{
+        content: "Ano ";
+    }
+}
+
+@media (max-width: 400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+    .empresa-titulo2{
+        position: relative;
+        left: -1px;
+    }
+}

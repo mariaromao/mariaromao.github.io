@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap; /*quando diminuir a tela o menu quebrar*/
+    list-style: none;
+    gap: 20px;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(224, 224, 224, 0.882);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 700px){
+    .header{
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+    }
+
+    .header a {
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}
